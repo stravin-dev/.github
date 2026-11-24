@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://stravin.dev>
+  <a href="https://stravin.dev">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./assets/stravin-lockup-dark.svg">
       <source media="(prefers-color-scheme: light)" srcset="./assets/stravin-lockup-light.svg">
@@ -9,6 +9,10 @@
 </p>
 
 <h3 align="center">Stateless, multi-region hosted Git built for human teams and agent-scale engineering.</h3>
+
+<p align="center">
+  <a href="https://stravin.dev"><strong>stravin.dev</strong></a>
+</p>
 
 ---
 
