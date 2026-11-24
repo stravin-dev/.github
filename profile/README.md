@@ -1,9 +1,11 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/stravin-lockup-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="./assets/stravin-lockup-light.svg">
-    <img alt="Stravin" src="./assets/stravin-lockup-light.svg" width="320">
-  </picture>
+  <a href="https://stravin.dev>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/stravin-lockup-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="./assets/stravin-lockup-light.svg">
+      <img alt="Stravin" src="./assets/stravin-lockup-light.svg" width="320">
+    </picture>
+  </a>
 </p>
 
 <h3 align="center">Stateless, multi-region hosted Git built for human teams and agent-scale engineering.</h3>
@@ -29,20 +31,6 @@ Built in Go on managed cloud primitives, Stravin separates durable object storag
 - **Disposable Compute, Zero Repack Storms** — Stateless Git nodes treat local NVMe strictly as a warm, rebuildable cache. Tiered, LSM-style packfile compaction and index generation run completely out-of-band on isolated workers, so heavy repository maintenance never steals CPU or I/O from live reads and writes.
 - **Zero-Latency Safety Guardrails** — Synchronous pre-receive checks run inside hermetic WebAssembly sandboxes concurrently with packfile uploads—enforcing secret scanning, commit hygiene, and policy rules with effectively zero added push latency. Heavy downstream workflows run asynchronously through a transactional outbox.
 - **Defense-in-Depth Multi-Tenancy** — Standard Git wire protocol compatibility (SSH and Smart HTTP) meets strict process, namespace, and resource isolation so untrusted packs and noisy workloads stay safely contained.
-
----
-
-### One Platform, Five Modular Layers
-
-Stravin starts with a rock-solid bare Git storage engine and expands cleanly into the full developer lifecycle:
-
-| Layer | Role |
-| :--- | :--- |
-| **Stravin Core** | Stateless multi-region Git wire protocol, immutable S3 packfile storage, atomic Ref-CAS, WebAssembly hooks, and sharded compaction |
-| **Stravin Review** | Pull requests, stacked diffs, inline code review, and repository browsing |
-| **Stravin Run** | Ephemeral CI runners, pipelines, and isolated execution sandboxes |
-| **Stravin Index** | Trigram full-text code search, symbol navigation, and cross-repository dependency graphs |
-| **Stravin Gate** | Serialized merge queues, branch protection, policy checks, and agent guardrails |
 
 ---
 
